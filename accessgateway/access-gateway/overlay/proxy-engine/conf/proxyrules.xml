@@ -10,3 +10,7 @@
 <nete:proxyrules xmlns:nete="http://52.140.82.168/">
      <nete:forward>http://52.140.82.168$0</nete:forward>
 </nete:proxyrules>
+
+<nete:proxyrules xmlns:nete="http://52.140.82.169/">
+     <nete:forward>http://52.140.82.169$0</nete:forward>
+</nete:proxyrules>
