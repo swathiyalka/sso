@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><ImsDirectory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" description="Sample users in a relational database" name="SiteMinder Sample Users---188d302dd94" wellknownfile="imsconfig://wellknown/RDBImsWellKnown.xml" xsi:noNamespaceSchemaLocation="imsconfig://schema/RdbImsDirectory.xsd">
+
+	<!--  For use with: -->
+	<!-- smsampleusers_sqlserver.sql -->
+	<!-- smsampleusers_oracle.sql -->
+
+    <Provider type="RDB" userdirectory="SmSampleUsers">
+		<JDBC datasource="jdbc/smadministrators"/>
+		<Credentials cleartext="true" user=""/>
+		<DSN name="SmSampleUsers Data Source"/>
+		
+		<!-- CQ135342 Workaround -->
+		<SiteMinderQuery name="GetGroupProperties" query="n/a"/>
+	</Provider>
+
+	<ImsManagedObject description="SiteMinder Sample Users" name="User" objecttype="USER">
+        <Table name="SmUser" primary="true"/>
+		<UniqueIdentifier>
+			<UniqueIdentifierAttr name="SmUser.UserID"/>
+		</UniqueIdentifier>
+		<ImsManagedObjectAttr description="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.userID}" displayname="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.userID}" hidden="true" maxlength="0" permission="READONLY" physicalname="SmUser.UserID" valuetype="Integer"/>
+		<ImsManagedObjectAttr description="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.loginName}" displayname="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.loginName}" maxlength="0" multivalued="false" physicalname="SmUser.Name" required="false" searchable="true" valuetype="String" wellknown="%USER_ID%"/>
+		<ImsManagedObjectAttr description="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.password}" displayname="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.password}" maxlength="0" multivalued="false" physicalname="SmUser.Password" required="false" valuetype="String" wellknown="%PASSWORD%">
+			<DataClassification name="sensitive"/>
+		</ImsManagedObjectAttr>
+		<ImsManagedObjectAttr description="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.passwordData}" displayname="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.passwordData}" hidden="true" maxlength="0" multivalued="false" physicalname="SmUser.PasswordData" required="false" valuetype="String" wellknown="%PASSWORD_DATA%"/>
+		<ImsManagedObjectAttr description="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.firstName}" displayname="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.firstName}" maxlength="0" multivalued="false" physicalname="SmUser.FirstName" required="true" searchable="true" valuetype="String" wellknown="%FIRST_NAME%"/>
+		<ImsManagedObjectAttr description="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.lastName}" displayname="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.lastName}" maxlength="0" multivalued="false" physicalname="SmUser.LastName" required="true" searchable="true" valuetype="String" wellknown="%LAST_NAME%"/>
+		<ImsManagedObjectAttr description="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.email}" displayname="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.email}" maxlength="0" multivalued="false" physicalname="SmUser.EmailAddress" required="false" searchable="true" valuetype="String" wellknown="%EMAIL%"/>
+		<ImsManagedObjectAttr description="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.disabledState}" displayname="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.disabledState}" hidden="true" maxlength="0" multivalued="false" physicalname="SmUser.Disabled" required="false" valuetype="String" wellknown="%ENABLED_STATE%"/>
+		<ImsManagedObjectAttr description="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.fullName}" displayname="${bundle=com.ca.siteminder.webadmin.tabs.LocalStrings:key=label.attributeMapping.displayName.fullName}" maxlength="0" permission="READONLY" valuetype="String" wellknown="%FULL_NAME%">
+			<Operation name="Get" value="select SmUser.FirstName + ' ' + SmUser.LastName from SmUser where SmUser.UserID=?">
+				<Parameter name="SmUser.UserID"/>
+			</Operation>
+		</ImsManagedObjectAttr>
+	</ImsManagedObject>
+
+</ImsDirectory>
