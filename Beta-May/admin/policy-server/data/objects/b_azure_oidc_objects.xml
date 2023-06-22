@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by CA SiteMinder Version 12.8.0700.2799
+     by os:smuser
+     at 14:36:43 on 2022-01-30 -->
+<XPS>
+    <XPSVersion>1</XPSVersion>
+    <HostInformation>adminps-siteminder-admin-0</HostInformation>
+    <XPSAdmin>os:smuser</XPSAdmin>
+    <PolicyData IsDumpExport="false">
+        <References>
+            <ReferenceValue ReferenceId="Ref00001">
+                <StringValue>RS512</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00002">
+                <StringValue>https://cloudssoagtesting.ca.com/affwebservices/redirectjsp/redirect.jsp</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00003">
+                <StringValue>https://cloudssoagtesting.ca.com</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00004">
+                <StringValue>k8soidcprovider</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00005">
+                <StringValue>cn=Directory Manager</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00006">
+                <StringValue>o=security.com</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00007">
+                <StringValue>52.140.82.167:1389</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00008">
+                <StringValue>profile</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00009">
+                <StringValue>family_name</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00010">
+                <StringValue>name</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00011">
+                <StringValue>middle_name</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00012">
+                <StringValue>uid</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00013">
+                <StringValue>Name</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00014">
+                <StringValue>address</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00015">
+                <StringValue>name,family_name,given_name,middle_name,gender,birthdate</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00016">
+                <StringValue>birthdate</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00017">
+                <StringValue>sub</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00018">
+                <StringValue>email</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00019">
+                <StringValue>phone_number</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00020">
+                <StringValue>gender</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00021">
+                <StringValue>phone</StringValue>
+            </ReferenceValue>
+            <ReferenceValue ReferenceId="Ref00022">
+                <StringValue>given_name</StringValue>
+            </ReferenceValue>
+            <ReferenceObject ReferenceId="Ref00029" ObjectClass="CA.SM::AuthScheme">
+            <Xid>CA.SM::AuthScheme@0d-6dc75be0-1935-11d3-95cc-00c04f7468ef</Xid>
+            <Attribute Name="CA.SM::AuthScheme.Library" Type="Identity">
+                <StringValue>smauthanon</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::AuthScheme.Name" Type="Identity">
+                <StringValue>Anonymous Template</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::AuthScheme.Desc" Type="Comment">
+                <StringValue>Anonymous</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00028" ObjectClass="CA.SM::AuthScheme">
+            <Xid>CA.SM::AuthScheme@0d-4afc0e42-ae25-11d1-9cdd-006008aac24b</Xid>
+            <Attribute Name="CA.SM::AuthScheme.Library" Type="Identity">
+                <StringValue>smauthdir</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::AuthScheme.Name" Type="Identity">
+                <StringValue>Basic</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::AuthScheme.Desc" Type="Comment">
+                <StringValue>Directory username/password</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00027" ObjectClass="CA.SM::AgentTypeAttr">
+            <Xid>CA.SM::AgentTypeAttr@11-8d78bb90-ae15-11d1-9cdd-006008aac24b</Xid>
+            <Attribute Name="CA.SM::AgentTypeAttr.Name" Type="Identity">
+                <StringValue>WebAgent-HTTP-Header-Variable</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00026" ObjectClass="CA.SM::AgentTypeAttr">
+            <Xid>CA.SM::AgentTypeAttr@11-3974f60e-eb2e-49b8-96cc-fd6253483c0d</Xid>
+            <Attribute Name="CA.SM::AgentTypeAttr.Name" Type="Identity">
+                <StringValue>Affiliate-HTTP-Header-Variable</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00025" ObjectClass="CA.SM::AgentType">
+            <Xid>CA.SM::AgentType@10-fbe22c2f-ce96-4465-a8f3-45219bdd5232</Xid>
+            <Attribute Name="CA.SM::AgentType.Name" Type="Identity">
+                <StringValue>AffiliateMinder</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::AgentType.Desc" Type="Comment">
+                <StringValue>AffiliateMinder Agent</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00024" ObjectClass="CA.SM::AgentType">
+            <Xid>CA.SM::AgentType@10-8d78bb96-ae15-11d1-9cdd-006008aac24b</Xid>
+            <Attribute Name="CA.SM::AgentType.Name" Type="Identity">
+                <StringValue>Web Agent</StringValue>
+            </Attribute>
+            <Attribute Name="CA.SM::AgentType.Desc" Type="Comment">
+                <StringValue>SiteMinder Web Agent</StringValue>
+            </Attribute>
+            </ReferenceObject>
+            <ReferenceObject ReferenceId="Ref00023" ObjectClass="CA.SM::Agent">
+            <Xid>CA.SM::Agent@01-00019cac-2796-10b5-a390-01d7ac1f0000</Xid>
+            <Attribute Name="CA.SM::Agent.Name" Type="Identity">
+                <StringValue>k8sagent</StringValue>
+            </Attribute>
+            </ReferenceObject>
+        </References>
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00085d7d-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00013</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00017</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00085d7d-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@000859ee-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00012</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00017</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@000859ee-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00085674-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00018</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00018</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00085674-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00084d61-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00011</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00011</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00084d61-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@000834ff-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00016</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00016</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@000834ff-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00083c45-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00014</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00014</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00083c45-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@0008433b-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00010</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00010</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@0008433b-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@000850e2-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00009</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00009</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@000850e2-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00083fd1-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00020</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00020</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00083fd1-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00084a07-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00022</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00022</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@00084a07-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClaimAndUserAttributeMapping" Xid="CA.FED::OIDCClaimAndUserAttributeMapping@000846bf-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.UserAttribute">
+                <LinkValue><XREF>Ref00019</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClaimAndUserAttributeMapping.Claim">
+                <LinkValue><XREF>Ref00019</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClaimAndUserAttributeMapping@000846bf-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCScopeAndClaimsMapping" Xid="CA.FED::OIDCScopeAndClaimsMapping@00086f03-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCScopeAndClaimsMapping.Claims">
+                <LinkValue><XREF>Ref00014</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCScopeAndClaimsMapping.ScopeName">
+                <LinkValue><XREF>Ref00014</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCScopeAndClaimsMapping@00086f03-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCScopeAndClaimsMapping" Xid="CA.FED::OIDCScopeAndClaimsMapping@000867f5-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCScopeAndClaimsMapping.Claims">
+                <LinkValue><XREF>Ref00015</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCScopeAndClaimsMapping.ScopeName">
+                <LinkValue><XREF>Ref00008</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCScopeAndClaimsMapping@000867f5-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCScopeAndClaimsMapping" Xid="CA.FED::OIDCScopeAndClaimsMapping@00086b6e-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCScopeAndClaimsMapping.Claims">
+                <LinkValue><XREF>Ref00019</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCScopeAndClaimsMapping.ScopeName">
+                <LinkValue><XREF>Ref00021</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCScopeAndClaimsMapping@00086b6e-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCScopeAndClaimsMapping" Xid="CA.FED::OIDCScopeAndClaimsMapping@0008610b-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCScopeAndClaimsMapping.Claims">
+                <LinkValue><XREF>Ref00018</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCScopeAndClaimsMapping.ScopeName">
+                <LinkValue><XREF>Ref00018</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCScopeAndClaimsMapping@0008610b-8c27-11f1-90a7-95450a0a0000" -->
+        <Object Class="CA.SM::Agent" Xid="CA.SM::Agent@01-000ece96-e1d9-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:41:13" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.SM::Agent.RealmHintAttrId">
+                <NumberValue>0</NumberValue>
+            </Property>
+            <Property Name="CA.SM::Agent.AgentTypeLink">
+                <LinkValue>
+                    <XREF>Ref00024</XREF>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.SM::Agent.Name">
+                <StringValue>oidcc:jwtbearerwebagent</StringValue>
+            </Property>
+            <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                <NumberValue>1</NumberValue>
+            </Property>
+        </Object><!-- Xid="CA.SM::Agent@01-000ece96-e1d9-11ef-90a7-95450a0a0000" -->
+        <Object Class="CA.SM::Agent" Xid="CA.SM::Agent@01-00065d1f-e03c-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:34:20" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.SM::Agent.RealmHintAttrId">
+                <NumberValue>0</NumberValue>
+            </Property>
+            <Property Name="CA.SM::Agent.AgentTypeLink">
+                <LinkValue>
+                    <XREF>Ref00025</XREF>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.SM::Agent.Name">
+                <StringValue>oidcp:k8soidcprovider</StringValue>
+            </Property>
+            <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                <NumberValue>1</NumberValue>
+            </Property>
+        </Object><!-- Xid="CA.SM::Agent@01-00065d1f-e03c-11ef-90a7-95450a0a0000" -->
+        <Object Class="CA.CDS::Certificate" Xid="CA.CDS::Certificate@000d2934-dc1a-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:16:42" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.CDS::Certificate.EnableCertValidFailover">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.SerialNumber">
+                <StringValue>009FA8146DBEE964F1</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.IssuerDN">
+                <StringValue>C=IN,ST=TN,L=HYD,O=CA,OU=SBU,CN=user10</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.PrimaryValidationMethod">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.OCSPRevStatusValue">
+                <NumberValue>1</NumberValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.Type">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.Alias">
+                <StringValue>user10</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.CRLRevStatusValue">
+                <NumberValue>1</NumberValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.SubjectName">
+                <StringValue>C=IN,ST=TN,L=HYD,O=CA,OU=SBU,CN=user10</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.IsFIPSApproved">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.PrivateKey" Sensitive="Yes">
+                <StringValue>0:0,-93,-94,0,-37,94,-36,-73,-49,76,-37,21,118,-58,77,75,-38,-2,-7,-58,24,-128,126,-110,-10,-6,90,-44,-71,-119,47,64,55,93,6,119,-46,-37,-49,-3,-70,-121,80,-7,6,33,101,-26,20,-82,85,126,59,86,56,-80,54,-121,-86,75,-97,101,102,26,-116,-105,-18,-112,-69,-108,-109,-5,0,48,17,-53,-54,-98,-108,-17,9,-27,1,19,74,-59,95,48,-18,-81,35,-80,-87,-93,-48,2,72,20,56,-100,97,99,-124,-30,-75,126,57,-82,-88,119,37,46,74,78,117,70,123,126,66,83,75,-85,4,-61,20,27,-90,-27,105,101,127,-103,-1,23,77,-24,71,-57,18,-104,88,120,-70,-117,-101,3,-83,-34,37,-70,89,-69,-27,-108,92,66,-22,-76,10,54,-42,30,-45,-112,71,61,37,-14,1,-36,-30,73,-105,-26,17,28,-33,-36,-7,88,55,-6,-124,-25,10,94,-73,-54,-76,4,-114,-35,1,34,-73,-121,36,83,-74,-35,-40,60,16,41,-77,-77,-83,-50,-21,-63,-34,-101,87,-20,113,-50,24,-101,-83,59,57,21,-111,-110,81,-128,114,105,21,81,-69,41,0,-103,-114,67,62,80,46,119,-18,-39,116,76,42,-59,89,87,-71,-101,58,113,43,-108,53,-24,-35,;1,0,1,;5,-118,87,-77,21,-52,45,97,20,126,26,-124,-14,3,-19,-4,-107,67,-119,-60,-116,-99,60,-122,-90,69,107,12,121,43,-93,101,-4,125,90,-109,70,36,13,-72,66,26,-88,-61,-33,95,-98,-31,-74,97,104,-85,-61,-88,-103,-74,-50,-13,34,42,92,121,-113,-114,-111,26,95,-58,42,42,-76,-123,-10,26,-76,38,-63,37,-45,-50,38,-11,-39,92,95,-64,112,92,-76,-117,101,-48,-24,-98,3,101,-61,97,-125,81,-4,-41,-92,1,119,43,-90,-47,71,111,119,-40,-58,61,76,76,-92,34,-60,-59,60,30,38,40,-55,34,-26,-125,-108,51,10,113,-125,3,79,-23,-87,-52,96,73,113,-54,9,118,-125,41,-4,-52,-85,-44,-54,-15,125,23,127,-20,121,43,-117,0,56,48,-6,64,62,-57,-5,22,26,99,-55,-22,116,-76,-57,40,-16,110,118,-35,-52,-94,-95,-4,-116,-11,-112,-40,-90,15,32,98,101,-26,33,117,78,67,-31,-21,-55,-33,-92,-24,12,-114,-124,61,116,93,-20,-122,102,-36,117,-84,68,-76,-53,104,-42,66,98,67,68,38,-55,89,89,34,-111,-23,98,44,66,12,-11,-120,-83,92,-19,-22,-127,-111,-10,55,115,-83,-54,-11,41,-74,-85,75,116,21,;0,-51,46,-72,60,-122,-20,125,28,114,-53,5,78,121,-6,53,35,-79,-21,-99,-43,-65,-94,-48,37,-67,122,-97,119,-19,32,96,-75,49,101,16,-97,55,46,-32,97,93,-26,105,-115,11,28,-34,26,123,-96,60,-25,-14,-65,-126,99,-9,105,47,-10,40,64,118,-114,7,-74,-110,-19,27,-18,95,-73,-8,66,11,-35,-11,110,75,95,8,-119,106,51,-70,-32,59,43,7,-15,-5,-115,119,-72,-43,-54,-102,3,35,26,-94,13,7,75,80,45,72,-17,-38,-50,-22,50,48,-112,78,109,-88,-72,17,-74,28,39,64,40,-47,1,127,67,;0,-52,40,-28,0,-20,-49,95,74,12,-36,-39,-116,-107,4,-13,-61,-127,59,-127,-90,81,18,51,-46,75,73,-48,54,-58,115,56,26,84,81,7,106,-3,-124,104,-72,52,-18,58,0</StringValue>
+                <StringValue>1:,43,116,22,108,-45,72,-50,55,-125,-67,-75,10,51,-42,-3,-77,-72,27,91,80,88,-27,27,-9,-111,43,-51,107,-38,-89,-41,8,-23,-83,34,-32,16,-127,-68,119,-84,-52,0,-25,-120,-61,-88,60,83,75,60,100,-17,50,77,59,89,-8,-60,-41,-59,-114,45,11,4,61,106,-75,-17,-83,5,47,1,2,108,-65,-77,-51,-116,43,-102,1,37,95,;0,-68,-91,74,-48,-93,-128,-123,27,5,-45,-15,98,16,-75,-31,-21,-102,-90,-75,-84,19,-112,126,-19,100,3,124,-32,-57,76,-16,125,71,23,-45,-85,127,18,3,76,-94,7,-71,93,-21,44,-76,108,6,-29,-15,123,-108,109,77,85,-39,-32,-123,47,62,28,-34,-93,-127,37,-12,122,58,38,-11,44,112,-3,80,105,-41,64,123,-35,-71,60,-106,63,79,126,-32,7,-107,59,127,123,-74,-22,98,-19,-18,-94,25,-63,95,-30,-72,-91,30,-25,51,-37,11,3,24,-63,-30,114,-101,25,41,121,107,23,83,85,39,33,31,-32,-49,127,;0,-83,-106,90,-2,-70,91,59,-17,47,110,-100,126,-34,-71,-34,53,-83,-19,21,-72,127,24,21,-3,-55,76,18,-128,112,77,-55,55,1,-41,-1,-111,-91,-54,-18,107,41,126,32,-52,-62,37,-85,103,-114,98,74,12,-125,-76,74,121,73,72,-108,96,57,-70,-16,-14,41,19,108,-85,27,-64,-3,-95,-91,-63,-83,-95,-125,102,85,-49,-29,-39,27,-111,57,-40,31,48,-66,101,117,-25,12,-1,92,115,-119,-71,-32,87,5,-111,-14,116,112,34,10,4,98,-17,-127,-118,-2,37,-61,-47,-118,111,48,93,-13,24,99,5,51,-91,-93,-53,;110,63,91,-117,74,51,91,114,90,-37,120,37,-68,127,-94,-16,20,-97,-45,-114,-36,62,-119,121,61,45,-80,-40,49,30,124,116,41,-69,6,-8,108,-83,70,-72,-73,-85,1,-102,93,-4,33,-91,119,54,-70,95,-127,67,122,1,115,3,99,-37,-111,52,-54,-115,-91,-42,-19,76,62,-23,-82,99,-70,121,15,95,-4,-40,8,23,97,-9,88,-122,-105,111,-43,-22,-14,71,-115,72,97,-91,-69,-39,93,-28,-32,67,101,88,-106,-70,-107,-67,-38,27,1,96,94,64,119,-87,-118,-12,-67,43,20,-25,-67,29,-24,-61,-46,-16,-36,-97,;</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.CertificateData">
+                <StringValue>MIIDJDCCAgwCCQCfqBRtvulk8TANBgkqhkiG9w0BAQUFADBUMQswCQYDVQQG
+EwJJTjELMAkGA1UECAwCVE4xDDAKBgNVBAcMA0hZRDELMAkGA1UECgwCQ0Ex
+DDAKBgNVBAsMA1NCVTEPMA0GA1UEAwwGdXNlcjEwMB4XDTE3MTAyMDA4MDYy
+MVoXDTIyMTAxOTA4MDYyMVowVDELMAkGA1UEBhMCSU4xCzAJBgNVBAgMAlRO
+MQwwCgYDVQQHDANIWUQxCzAJBgNVBAoMAkNBMQwwCgYDVQQLDANTQlUxDzAN
+BgNVBAMMBnVzZXIxMDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+AKOiANte3LfPTNsVdsZNS9r++cYYgH6S9vpa1LmJL0A3XQZ30tvP/bqHUPkG
+IWXmFK5VfjtWOLA2h6pLn2VmGoyX7pC7lJP7ADARy8qelO8J5QETSsVfMO6v
+I7Cpo9ACSBQ4nGFjhOK1fjmuqHclLkpOdUZ7fkJTS6sEwxQbpuVpZX+Z/xdN
+6EfHEphYeLqLmwOt3iW6WbvllFxC6rQKNtYe05BHPSXyAdziSZfmERzf3PlY
+N/qE5wpet8q0BI7dASK3hyRTtt3YPBAps7OtzuvB3ptX7HHOGJutOzkVkZJR
+gHJpFVG7KQCZjkM+UC537tl0TCrFWVe5mzpxK5Q16N0CAwEAATANBgkqhkiG
+9w0BAQUFAAOCAQEAh6y49eSXhgVSw3gskzRViT11BAtA6O9DYwWwmGvHVEV9
+8x3cSuPrJb9L0Tjcjjrd0TiaN9+5ZfVM4u8LRXhBHK26Z6pm9IEfx9WV0NZC
+D8QIuI6El6b76Ukg7tj4lTIupAbaSQ1D++CW3TLPzN8w/X57h75BBQzjM3pz
++KWURPs9Gvou61k5fRzsW1a9JeZAmsZGg4SttzT7oPl0jBN6ykpsBYeWrzLA
+X1pPid6nbsOGFzlGcj6pmi60lVW8kkXBH6VB8e9cn2GGuxBYQVD8AcAdnkkw
+dV0KCq9nYALO7suBNLTMQFs8urcNIVA1cb3xfNu9hZivz8qMom2ege7ByQ==
+</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.Device">
+                <StringValue>Java</StringValue>
+            </Property>
+        </Object><!-- Xid="CA.CDS::Certificate@000d2934-dc1a-11ef-90a7-95450a0a0000" -->
+        <Object Class="CA.CDS::Certificate" Xid="CA.CDS::Certificate@0002c419-dddc-11a6-8246-ee210a0a0000" CreatedDateTime="2022-01-25T05:05:11" UpdatedBy="XPSDictionary::Import" UpdateMethod="Internal" ExportType="Add">
+            <Property Name="CA.CDS::Certificate.EnableCertValidFailover">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.SerialNumber">
+                <StringValue>00D28B33582C08DD38</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.IssuerDN">
+                <StringValue>C=IN,ST=TN,L=HYD,O=CA,OU=SBU,CN=apimgateway.ca.com</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.PrimaryValidationMethod">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.OCSPRevStatusValue">
+                <NumberValue>1</NumberValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.Type">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.Alias">
+                <StringValue>apimgateway</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.CRLRevStatusValue">
+                <NumberValue>1</NumberValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.SubjectName">
+                <StringValue>C=IN,ST=TN,L=HYD,O=CA,OU=SBU,CN=apimgateway.ca.com</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.IsFIPSApproved">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.PrivateKey" Sensitive="Yes">
+                <StringValue>0:0,-62,73,69,42,34,-81,56,-16,38,-81,102,-54,74,28,-45,120,123,-82,-65,22,-1,85,-115,113,43,-71,18,64,77,-33,64,119,-128,99,-97,-55,-46,64,-71,-125,-38,-35,19,20,119,-82,-98,-76,-124,82,-112,-41,-30,61,92,109,19,6,97,53,-26,-81,14,101,74,-10,-32,41,-18,-40,-17,-78,65,-31,84,80,98,46,-38,-110,6,-2,-53,-81,31,62,28,-19,102,115,-57,39,24,-113,-23,88,-105,79,-118,84,105,-60,-40,25,46,-30,91,-82,-113,-42,-11,38,-31,127,26,-105,99,103,-93,-27,0,-68,-125,0,13,36,106,67,10,-10,104,124,-91,-50,-86,27,72,-42,-80,-81,23,4,-44,-126,41,118,-30,-96,-44,-121,36,33,-50,25,116,8,63,-54,-40,46,-50,-40,68,-59,-34,38,77,-79,89,55,116,-95,83,-106,-31,-82,-14,-35,-117,7,76,117,84,-73,16,81,4,-24,114,-20,-102,108,102,39,-119,55,-124,-115,60,-1,89,45,-103,-22,108,-69,29,-101,-27,49,120,-66,118,-54,26,81,-37,50,-73,-20,-46,14,42,71,36,19,-121,98,-13,-60,35,-23,-45,95,50,-49,74,-57,25,-99,-86,-30,88,31,-60,99,123,11,-40,20,49,-94,111,114,-89,127,;1,0,1,;101,-116,-60,-95,12,118,7,-51,-58,122,-95,-64,-108,82,82,-38,67,-45,-121,-65,-18,127,-6,41,48,16,81,16,-39,99,26,-96,27,-76,118,-35,-105,-113,11,40,119,42,92,-127,-77,56,-53,109,81,72,-110,-70,-76,95,28,67,74,-47,103,-40,51,-106,70,112,-3,104,-30,-84,40,82,-83,-98,-65,-66,-106,66,89,-65,97,-79,56,4,-49,-45,-34,1,-86,63,15,-16,-18,36,106,59,54,93,126,-31,45,77,-121,-25,66,-120,-113,47,-13,121,-33,103,28,-58,80,-47,13,-58,25,72,31,-85,95,-30,40,-102,-53,67,-64,98,22,7,-33,-31,65,41,-26,70,84,71,17,-127,-84,-43,-94,-41,-118,35,118,9,-86,-37,-41,127,59,-62,4,112,-25,38,-36,-45,-46,17,24,23,50,107,-63,81,78,-39,113,21,82,100,66,117,124,64,20,-60,43,9,-83,127,-48,-99,40,-2,127,-58,-15,45,99,69,-5,31,-106,-9,-82,-21,-119,97,6,19,55,-84,-51,121,-99,41,-1,-106,77,-65,-21,-86,118,13,-15,125,-73,-69,-3,-9,-5,16,96,-37,-39,-87,-3,90,91,32,-3,-104,46,19,5,-9,78,-84,-76,116,115,-126,-60,-55,-110,25,20,-31,-61,15,86,-47,;0,-8,95,116,-32,110,-80,-44,37,78,115,-79,82,114,11,64,3,44,-56,94,-20,110,-119,0,11,52,5,28,-65,104,86,65,-49,-24,5,60,-73,-12,109,-88,-24,-62,100,82,57,-38,-15,-30,17,-87,-42,72,65,93,33,112,-50,57,-25,127,-32,-41,-81,73,34,23,5,-42,71,78,14,94,88,-125,-109,46,51,-5,42,59,3,23,19,105,87,18,-1,82,-25,-10,-75,74,-89,-54,-68,56,39,84,-30,98,54,-25,85,123,76,-2,-111,-9,47,-39,-57,37,-124,17,-67,-16,30,-118,-93,-10,-20,-30,-65,-105,101,-29,-103,-35,9,;0,-56,64,-98,-72,38,-128,-118,105,50,-65,113,-47,126,-48,72,-31,23,10,77,13,16,42,51,-123,45,2,-25,116,41,7,102,-41,-83,-16,16,117,-81,42,-9,52,-17,-52,7,25,41,110,21,-39,124,65,7,-9</StringValue>
+                <StringValue>1:6,-116,15,104,104,-106,26,-90,18,109,-10,108,-14,91,-11,-20,-82,68,106,-102,82,52,44,-90,12,69,2,118,-45,-15,-50,61,50,-56,69,15,-3,-8,-56,-39,-11,15,-37,90,110,31,89,59,-98,-50,59,-112,42,40,9,-109,44,6,121,22,-60,53,-44,32,95,23,92,-115,54,-90,85,9,61,81,4,10,71,;54,-33,104,3,-7,-112,-119,-98,32,98,1,8,20,-8,21,81,94,64,122,112,67,-49,114,-70,6,-23,38,59,-57,-126,95,17,-34,-47,-31,99,70,-42,63,94,5,44,-126,-38,19,92,35,53,1,-49,-68,-80,-20,49,106,41,-75,-77,70,-106,87,48,123,-72,-45,91,79,-58,-5,32,-61,-119,76,-80,100,-95,-55,88,-64,38,-29,-97,63,67,-92,-121,-46,58,59,80,60,73,43,-54,63,-95,-72,-24,55,8,-88,61,67,123,116,54,-83,100,-35,-7,88,121,-128,45,-11,113,-39,-15,117,-87,74,67,71,-32,-109,-45,55,121,;110,39,45,-89,-70,118,38,-84,-21,95,103,-22,-121,73,103,109,121,-47,14,-59,74,-55,12,2,11,-38,119,26,-20,-98,-57,-79,-120,90,111,-109,108,-63,-61,-83,-8,-30,80,93,68,-18,-21,81,-15,9,-116,122,-127,-48,-49,-20,7,-11,-84,-72,-94,-120,85,49,-109,-24,89,67,27,27,80,-68,59,58,-4,51,-17,-102,5,103,92,-79,-57,-12,49,57,-36,44,38,55,-59,-67,9,-11,-19,110,122,12,9,-63,-73,76,8,103,72,18,-52,68,1,99,-122,100,115,-1,-75,-74,-39,16,-18,20,-53,-74,39,24,-11,-127,-75,109,;90,4,2,48,74,26,-119,-119,126,13,-12,13,60,-64,-102,112,-3,-105,44,-11,105,45,-95,-113,95,121,-4,43,-89,-47,90,123,-38,-21,-94,109,-37,127,119,17,109,36,-121,-111,-125,118,-108,-112,-10,86,1,109,126,65,112,125,126,-39,-76,43,87,125,47,-22,-93,-24,-116,-63,-54,-55,44,-105,-107,-93,94,-39,8,-126,-52,122,-39,-55,-67,118,-124,11,-7,-51,6,17,30,-33,-19,58,53,24,-85,-6,83,-26,-73,10,6,118,83,-91,102,45,57,112,109,2,-64,-68,62,-114,32,82,-89,-59,-118,107,56,-22,-117,-38,-112,-28,;</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.CertificateData">
+                <StringValue>MIIDPDCCAiQCCQDSizNYLAjdODANBgkqhkiG9w0BAQUFADBgMQswCQYDVQQG
+EwJJTjELMAkGA1UECAwCVE4xDDAKBgNVBAcMA0hZRDELMAkGA1UECgwCQ0Ex
+DDAKBgNVBAsMA1NCVTEbMBkGA1UEAwwSYXBpbWdhdGV3YXkuY2EuY29tMB4X
+DTE3MTAyMDA3NTc0MVoXDTIyMTAxOTA3NTc0MVowYDELMAkGA1UEBhMCSU4x
+CzAJBgNVBAgMAlROMQwwCgYDVQQHDANIWUQxCzAJBgNVBAoMAkNBMQwwCgYD
+VQQLDANTQlUxGzAZBgNVBAMMEmFwaW1nYXRld2F5LmNhLmNvbTCCASIwDQYJ
+KoZIhvcNAQEBBQADggEPADCCAQoCggEBAMJJRSoirzjwJq9mykoc03h7rr8W
+/1WNcSu5EkBN30B3gGOfydJAuYPa3RMUd66etIRSkNfiPVxtEwZhNeavDmVK
+9uAp7tjvskHhVFBiLtqSBv7Lrx8+HO1mc8cnGI/pWJdPilRpxNgZLuJbro/W
+9SbhfxqXY2ej5QC8gwANJGpDCvZofKXOqhtI1rCvFwTUgil24qDUhyQhzhl0
+CD/K2C7O2ETF3iZNsVk3dKFTluGu8t2LB0x1VLcQUQTocuyabGYniTeEjTz/
+WS2Z6my7HZvlMXi+dsoaUdsyt+zSDipHJBOHYvPEI+nTXzLPSscZnariWB/E
+Y3sL2BQxom9yp38CAwEAATANBgkqhkiG9w0BAQUFAAOCAQEAMoanKdF7G2Lr
+1u0mflOO8inDWMqfGzeOuwSEISox6l3IBcydkf6D7grQGZswPurVQhx3tl6Z
+yt8qFuKlRcTWU2btbixBxBg2tgpTJj2D69jSOTfIrzhAXnZ7pfTtbxMj0bTZ
+v+pgnO3vKS8hqKdJvvCy5doQ0/dRdSIZmkjr57loPQluJnBpDPyDMRuMMVTE
+pDQpHCKCLcBvp1MlK5990eh+2cF1BrHKf+lnTUI8C8LKAnZM4/SImkfTBiUa
+BCa8M1sKYIi3Gk4hvvjwVLXSchOV5h07Z3wilQsqd2Ww5LfrRCGPjL7sJ3su
+KlLnBPHB1c76GmFI++Eunqd5kN8W6Q==
+</StringValue>
+            </Property>
+            <Property Name="CA.CDS::Certificate.Device">
+                <StringValue>Java</StringValue>
+            </Property>
+        </Object><!-- Xid="CA.CDS::Certificate@0002c419-dddc-11a6-8246-ee210a0a0000" -->
+        <Object Class="CA.SM::UserDirectory" Xid="CA.SM::UserDirectory@0e-000d6563-e743-109c-a30f-5efa0a83a47f" CreatedDateTime="2022-01-25T05:05:11" UpdatedBy="XPSDictionary::Import" UpdateMethod="Internal" ExportType="Add">
+            <Property Name="CA.SM::UserDirectory.UseAdvancedAuthStore">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.RequireCredentials">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.SecureConnection">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.UserLookupEnd">
+                <StringValue>)(objectclass=*))</StringValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.Username">
+                <LinkValue><XREF>Ref00005</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.Password" Sensitive="Yes">
+                <StringValue>firewall</StringValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.UserLookupStart">
+                <StringValue>(&amp;(uid=</StringValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.SearchScope">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.Server">
+                <LinkValue><XREF>Ref00007</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.SearchRoot">
+                <LinkValue><XREF>Ref00006</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.SearchResults">
+                <NumberValue>0</NumberValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.Namespace">
+                <StringValue>LDAP:</StringValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.EnableSecurityContext">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.SearchTimeout">
+                <NumberValue>30</NumberValue>
+            </Property>
+            <Property Name="CA.SM::UserDirectory.Name">
+                <StringValue>k8stestUD</StringValue>
+            </Property>
+        </Object><!-- Xid="CA.SM::UserDirectory@0e-000d6563-e743-109c-a30f-5efa0a83a47f" -->
+        <Object Class="CA.SM::AuthScheme" Xid="CA.SM::AuthScheme@0d-000ed142-e1d9-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:41:13" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.SM::AuthScheme.IPCheck">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.AllowAuthLevelOverride">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.PersistSessionVars">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.SupportsValidateIdentity">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.IsRadius">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.IgnorePwCheck">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.AllowSaveCreds">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.Type">
+                <NumberValue>38</NumberValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.IsUsedbyAdmin">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.Param">
+                <StringValue>com.ca.sm.jwtauth.SmJWTAuthScheme alias=apimgateway,user10;JWEALIAS=apimgateway;claim=sub;ISSUERS=wso2.org/products/mss;SKEWTIME=0;VALIDATE=exp,iss;SES=0;KID=0;JWEKID=0;SSL=0;PER=0;;</StringValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.Library">
+                <StringValue>smjavaapi</StringValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.Level">
+                <NumberValue>1</NumberValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.IsTemplate">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::AuthScheme.Name">
+                <StringValue>oidcc:k8soidcclient</StringValue>
+            </Property>
+            <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                <NumberValue>1</NumberValue>
+            </Property>
+        </Object><!-- Xid="CA.SM::AuthScheme@0d-000ed142-e1d9-11ef-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::Certificate" Xid="CA.FED::Certificate@000e5d8d-db3e-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:13:02" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::Certificate.CertificateGUID">
+                <LinkValue>
+                    <XID>CA.CDS::Certificate@0002c419-dddc-11a6-8246-ee210a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.Device">
+                <StringValue>Java</StringValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.IssuerDN">
+                <StringValue>CN=apimgateway.ca.com, OU=SBU, O=CA, L=HYD, ST=TN, C=IN</StringValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.FIPSApproved">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.Alias">
+                <StringValue>apimgateway</StringValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.SerialNumber">
+                <StringValue>d28b33582c08dd38</StringValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.Type">
+                <NumberValue>2</NumberValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::Certificate@000e5d8d-db3e-11ef-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::Certificate" Xid="CA.FED::Certificate@000d3eb1-dc1e-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:16:46" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::Certificate.CertificateGUID">
+                <LinkValue>
+                    <XID>CA.CDS::Certificate@000d2934-dc1a-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.Device">
+                <StringValue>Java</StringValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.IssuerDN">
+                <StringValue>CN=user10, OU=SBU, O=CA, L=HYD, ST=TN, C=IN</StringValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.FIPSApproved">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.Alias">
+                <StringValue>user10</StringValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.SerialNumber">
+                <StringValue>9fa8146dbee964f1</StringValue>
+            </Property>
+            <Property Name="CA.FED::Certificate.Type">
+                <NumberValue>2</NumberValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::Certificate@000d3eb1-dc1e-11ef-90a7-95450a0a0000" -->
+        <Object Class="CA.SM::Domain" Xid="CA.SM::Domain@03-0008f824-dd17-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:25:19" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Replace">
+            <Property Name="CA.SM::Domain.Mode">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.SM::Domain.IsDLP">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::Domain.IsAffiliate">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::Domain.UserDirectoriesLink">
+                <LinkValue>
+                    <XID>CA.SM::UserDirectory@0e-000d6563-e743-109c-a30f-5efa0a83a47f</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.SM::Domain.Name">
+                <StringValue>oidcdomain</StringValue>
+            </Property>
+            <Object Class="CA.SM::Realm" Xid="CA.SM::Realm@06-0007d987-dd2f-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:25:19" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Realm.MinUserConfidenceLevel">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionType">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SyncAudit">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.IdleTimeout">
+                    <NumberValue>3600</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProtectAll">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionDrift">
+                    <NumberValue>-1</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AuthSchemeLink">
+                    <LinkValue>
+                        <XREF>Ref00028</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAzEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAuthEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AgentLink">
+                    <LinkValue>
+                        <XREF>Ref00023</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ResourceFilter">
+                    <StringValue>/affwebservices/redirectjsp</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.MaxTimeout">
+                    <NumberValue>7200</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Name">
+                    <StringValue>oidcrealm</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-0005a6bd-ddb6-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:25:20" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>/*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                        <StringValue>Post</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>oidcrule</StringValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::Rule@0b-0005a6bd-ddb6-11ef-90a7-95450a0a0000" -->
+            </Object><!-- Xid="CA.SM::Realm@06-0007d987-dd2f-11ef-90a7-95450a0a0000" -->
+            <Object Class="CA.SM::Policy" Xid="CA.SM::Policy@04-0000531d-ddfd-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:25:20" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Policy.ValidateIdDifferentUser">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.IsEnabled">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.AllowAccess">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.TimeRestriction">
+                    <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                </Property>
+                <Property Name="CA.SM::Policy.ValidateIdentity">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.Name">
+                    <StringValue>oidcpolicy</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Object Class="CA.SM::UserPolicy" Xid="CA.SM::UserPolicy@0f-0000da05-de08-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:25:20" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::UserPolicy.UserDirectoryLink">
+                        <LinkValue>
+                            <XID>CA.SM::UserDirectory@0e-000d6563-e743-109c-a30f-5efa0a83a47f</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyFlags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyResolution">
+                        <NumberValue>7</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.FilterClass">
+                        <StringValue>All</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.FilterPath">
+                        <StringValue>All</StringValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::UserPolicy@0f-0000da05-de08-11ef-90a7-95450a0a0000" -->
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-0009391e-de0e-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:25:20" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-0005a6bd-ddb6-11ef-90a7-95450a0a0000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::PolicyLink@05-0009391e-de0e-11ef-90a7-95450a0a0000" -->
+            </Object><!-- Xid="CA.SM::Policy@04-0000531d-ddfd-11ef-90a7-95450a0a0000" -->
+        </Object><!-- Xid="CA.SM::Domain@03-0008f824-dd17-11ef-90a7-95450a0a0000" -->
+        <Object Class="CA.SM::Domain" Xid="CA.SM::Domain@03-000675ac-e03c-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:34:20" ModifiedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Replace">
+            <Property Name="CA.SM::Domain.Mode">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.SM::Domain.IsAffiliate">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::Domain.Desc">
+                <StringValue>Domain for IDToken Authentication</StringValue>
+            </Property>
+            <Property Name="CA.SM::Domain.Name">
+                <StringValue>oidcp:IDTH_k8soidcprovider</StringValue>
+            </Property>
+            <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                <NumberValue>1</NumberValue>
+            </Property>
+        </Object><!-- Xid="CA.SM::Domain@03-000675ac-e03c-11ef-90a7-95450a0a0000" -->
+        <Object Class="CA.SM::Domain" Xid="CA.SM::Domain@03-0006542e-e03c-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:34:20" ModifiedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Replace">
+            <Property Name="CA.SM::Domain.Mode">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.SM::Domain.IsAffiliate">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::Domain.Desc">
+                <StringValue>Backing Domain  object for OpenID connect</StringValue>
+            </Property>
+            <Property Name="CA.SM::Domain.UserDirectoriesLink">
+                <LinkValue>
+                    <XID>CA.SM::UserDirectory@0e-000d6563-e743-109c-a30f-5efa0a83a47f</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.SM::Domain.Name">
+                <StringValue>oidcp:k8soidcprovider</StringValue>
+            </Property>
+            <Property Name="CA.SM::AffiliateDomain.IsAffiliateDomain">
+                <NumberValue>1</NumberValue>
+            </Property>
+            <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                <NumberValue>1</NumberValue>
+            </Property>
+            <Object Class="CA.SM::Response" Xid="CA.SM::Response@07-000ee063-e1d9-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:41:14" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Response.AccessChallenge">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AccessReject">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AccessAccept">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AgentTypeLink">
+                    <LinkValue>
+                        <XREF>Ref00024</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Response.Name">
+                    <StringValue>oidcc:JWTBEARERRESPONSE</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>1</NumberValue>
+                </Property>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-000ee6b3-e1d9-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:41:14" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::ResponseAttr.ActiveExprString">
+                        <StringValue>&lt;@lib=&quot;smjavaapi&quot; func=&quot;JavaActiveExpression&quot;param=&quot;com.ca.federation.openidconnect.generator.AuthorizationResponseGenerator&quot;@&gt;</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>code</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00027</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>1</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::ResponseAttr@08-000ee6b3-e1d9-11ef-90a7-95450a0a0000" -->
+            </Object><!-- Xid="CA.SM::Response@07-000ee063-e1d9-11ef-90a7-95450a0a0000" -->
+            <Object Class="CA.SM::Response" Xid="CA.SM::Response@07-00066a67-e03c-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:34:20" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Response.AccessChallenge">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AccessReject">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AccessAccept">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Response.AgentTypeLink">
+                    <LinkValue>
+                        <XREF>Ref00025</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Response.Name">
+                    <StringValue>oidcp:k8soidcprovider_az</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>1</NumberValue>
+                </Property>
+                <Object Class="CA.SM::ResponseAttr" Xid="CA.SM::ResponseAttr@08-00067169-e03c-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:34:20" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::ResponseAttr.ActiveExprString">
+                        <StringValue>&lt;@lib=&quot;smjavaapi&quot; func=&quot;JavaActiveExpression&quot;param=&quot;com.ca.federation.openidconnect.generator.AuthorizationResponseGenerator&quot;@&gt;</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.TTL">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Value">
+                        <StringValue>code</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.Flags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::ResponseAttr.AgentTypeAttrLink">
+                        <LinkValue>
+                            <XREF>Ref00026</XREF>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>1</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::ResponseAttr@08-00067169-e03c-11ef-90a7-95450a0a0000" -->
+            </Object><!-- Xid="CA.SM::Response@07-00066a67-e03c-11ef-90a7-95450a0a0000" -->
+            <Object Class="CA.SM::Realm" Xid="CA.SM::Realm@06-000ed486-e1d9-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:41:13" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Realm.MinUserConfidenceLevel">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionType">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SyncAudit">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.IdleTimeout">
+                    <NumberValue>3600</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProtectAll">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionDrift">
+                    <NumberValue>-1</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AuthSchemeLink">
+                    <LinkValue>
+                        <XID>CA.SM::AuthScheme@0d-000ed142-e1d9-11ef-90a7-95450a0a0000</XID>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAzEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAuthEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AgentLink">
+                    <LinkValue>
+                        <XID>CA.SM::Agent@01-000ece96-e1d9-11ef-90a7-95450a0a0000</XID>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ResourceFilter">
+                    <StringValue>/k8soidcclient</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.MaxTimeout">
+                    <NumberValue>7200</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Name">
+                    <StringValue>oidcc:k8soidcclient</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>1</NumberValue>
+                </Property>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-000ede18-e1d9-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:41:14" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Get</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>oidcc:JWTBEARERRULE</StringValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>1</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::Rule@0b-000ede18-e1d9-11ef-90a7-95450a0a0000" -->
+            </Object><!-- Xid="CA.SM::Realm@06-000ed486-e1d9-11ef-90a7-95450a0a0000" -->
+            <Object Class="CA.SM::Realm" Xid="CA.SM::Realm@06-00065f87-e03c-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:34:20" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Realm.MinUserConfidenceLevel">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionType">
+                    <NumberValue>0</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SyncAudit">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.IdleTimeout">
+                    <NumberValue>3600</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProtectAll">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.SessionDrift">
+                    <NumberValue>-1</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AuthSchemeLink">
+                    <LinkValue>
+                        <XREF>Ref00029</XREF>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAzEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ProcessAuthEvents">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Realm.AgentLink">
+                    <LinkValue>
+                        <XID>CA.SM::Agent@01-00065d1f-e03c-11ef-90a7-95450a0a0000</XID>
+                    </LinkValue>
+                </Property>
+                <Property Name="CA.SM::Realm.ResourceFilter">
+                    <StringValue>/</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.MaxTimeout">
+                    <NumberValue>7200</NumberValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Desc">
+                    <StringValue>Backing Object for Partnership Federation - do not edit</StringValue>
+                </Property>
+                <Property Name="CA.SM::Realm.Name">
+                    <StringValue>oidcp:k8soidcprovider_az</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>1</NumberValue>
+                </Property>
+                <Object Class="CA.SM::Rule" Xid="CA.SM::Rule@0b-0006680b-e03c-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:34:20" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::Rule.RegularExpression">
+                        <BooleanValue>false</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.TimeRestriction">
+                        <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.IsEnabled">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Resource">
+                        <StringValue>*</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.AllowAccess">
+                        <BooleanValue>true</BooleanValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Actions">
+                        <StringValue>Visit</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Desc">
+                        <StringValue>Backing Object for Partnership Federation - do not edit</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::Rule.Name">
+                        <StringValue>oidcp:k8soidcprovider_az</StringValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>1</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::Rule@0b-0006680b-e03c-11ef-90a7-95450a0a0000" -->
+            </Object><!-- Xid="CA.SM::Realm@06-00065f87-e03c-11ef-90a7-95450a0a0000" -->
+            <Object Class="CA.SM::Policy" Xid="CA.SM::Policy@04-0006578c-e03c-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:34:20" UpdatedBy="siteminder" UpdateMethod="GUI">
+                <Property Name="CA.SM::Policy.ValidateIdDifferentUser">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.IsEnabled">
+                    <BooleanValue>true</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.AllowAccess">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.TimeRestriction">
+                    <StringValue>00000000-00000000-7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f</StringValue>
+                </Property>
+                <Property Name="CA.SM::Policy.ValidateIdentity">
+                    <BooleanValue>false</BooleanValue>
+                </Property>
+                <Property Name="CA.SM::Policy.Desc">
+                    <StringValue>Backing Object for Partnership Federation - do not edit</StringValue>
+                </Property>
+                <Property Name="CA.SM::Policy.Name">
+                    <StringValue>oidcp:k8soidcprovider</StringValue>
+                </Property>
+                <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                    <NumberValue>1</NumberValue>
+                </Property>
+                <Object Class="CA.SM::UserPolicy" Xid="CA.SM::UserPolicy@0f-00089a1b-8c27-11f1-90a7-95450a0a0000" CreatedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::UserPolicy.UserDirectoryLink">
+                        <LinkValue>
+                            <XID>CA.SM::UserDirectory@0e-000d6563-e743-109c-a30f-5efa0a83a47f</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyFlags">
+                        <NumberValue>0</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.PolicyResolution">
+                        <NumberValue>7</NumberValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.FilterClass">
+                        <StringValue>All</StringValue>
+                    </Property>
+                    <Property Name="CA.SM::UserPolicy.FilterPath">
+                        <StringValue>All</StringValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::UserPolicy@0f-00089a1b-8c27-11f1-90a7-95450a0a0000" -->
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-000ee7e5-e1d9-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:41:14" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-000ee063-e1d9-11ef-90a7-95450a0a0000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-000ede18-e1d9-11ef-90a7-95450a0a0000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>1</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::PolicyLink@05-000ee7e5-e1d9-11ef-90a7-95450a0a0000" -->
+                <Object Class="CA.SM::PolicyLink" Xid="CA.SM::PolicyLink@05-00067296-e03c-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:34:20" UpdatedBy="siteminder" UpdateMethod="GUI">
+                    <Property Name="CA.SM::PolicyLink.ResponseLink">
+                        <LinkValue>
+                            <XID>CA.SM::Response@07-00066a67-e03c-11ef-90a7-95450a0a0000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.SM::PolicyLink.RuleLink">
+                        <LinkValue>
+                            <XID>CA.SM::Rule@0b-0006680b-e03c-11ef-90a7-95450a0a0000</XID>
+                        </LinkValue>
+                    </Property>
+                    <Property Name="CA.XPS::MetaAttributes.HidingMask">
+                        <NumberValue>1</NumberValue>
+                    </Property>
+                </Object><!-- Xid="CA.SM::PolicyLink@05-00067296-e03c-11ef-90a7-95450a0a0000" -->
+            </Object><!-- Xid="CA.SM::Policy@04-0006578c-e03c-11ef-90a7-95450a0a0000" -->
+        </Object><!-- Xid="CA.SM::Domain@03-0006542e-e03c-11ef-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCAdminConfig" Xid="CA.FED::OIDCAdminConfig@000c6d3c-df51-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:34:20" ModifiedDateTime="2022-01-26T18:00:07" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCAdminConfig.JWEPrivateKey">
+                <LinkValue>
+                    <XID>CA.FED::Certificate@000e5d8d-db3e-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.EncryptIDToken">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.UserDirectoriesLink">
+                <LinkValue>
+                    <XID>CA.SM::UserDirectory@0e-000d6563-e743-109c-a30f-5efa0a83a47f</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.PolicyLink">
+                <LinkValue>
+                    <XID>CA.SM::Policy@04-0006578c-e03c-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.SignIDToken">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.DomainLink">
+                <LinkValue>
+                    <XID>CA.SM::Domain@03-0006542e-e03c-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.IDTokenDomainLink">
+                <LinkValue>
+                    <XID>CA.SM::Domain@03-000675ac-e03c-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.AuthorizationCodeExpiryTime">
+                <NumberValue>60</NumberValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.RealmLink">
+                <LinkValue>
+                    <XID>CA.SM::Realm@06-00065f87-e03c-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.SignUserInfo">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.SignAccessTokeninJWT">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.MinimumAuthLevel">
+                <NumberValue>5</NumberValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.Name">
+                <LinkValue><XREF>Ref00004</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.SigningAlgorithm">
+                <LinkValue><XREF>Ref00001</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.ScopeAndCliamsMappingLink">
+                <LinkValue>
+                    <XID>CA.FED::OIDCScopeAndClaimsMapping@0008610b-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCScopeAndClaimsMapping@000867f5-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCScopeAndClaimsMapping@00086b6e-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCScopeAndClaimsMapping@00086f03-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.SelectUserFilters">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.CreatedBy">
+                <StringValue>siteminder</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.SecureAuthURL">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.ClaimUserAttributeMappingLink">
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@000834ff-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@00083c45-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@00083fd1-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@0008433b-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@000846bf-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@00084a07-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@00084d61-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@000850e2-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@00085674-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@000859ee-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::OIDCClaimAndUserAttributeMapping@00085d7d-8c27-11f1-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property><!-- Name="CA.FED::OIDCAdminConfig.ClaimUserAttributeMappingLink" -->
+            <Property Name="CA.FED::OIDCAdminConfig.SigningAlias">
+                <LinkValue>
+                    <XID>CA.FED::Certificate@000e5d8d-db3e-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.EnableIdentityMapping">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.AuthorizationServerBaseURL">
+                <LinkValue><XREF>Ref00003</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.EncryptUserInfo">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.AuthenticationType">
+                <NumberValue>1</NumberValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.ModifiedOn">
+                <StringValue>1643220007537</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.CreatedOn">
+                <StringValue>1643110460396</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCAdminConfig.AuthenticationURL">
+                <LinkValue><XREF>Ref00002</XREF></LinkValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCAdminConfig@000c6d3c-df51-11ef-90a7-95450a0a0000" -->
+        <Object Class="CA.FED::OIDCClient" Xid="CA.FED::OIDCClient@00091501-e04f-11ef-90a7-95450a0a0000" CreatedDateTime="2022-01-25T11:41:14" UpdatedBy="siteminder" UpdateMethod="GUI" ExportType="Add">
+            <Property Name="CA.FED::OIDCClient.AccessTokenExpiry">
+                <NumberValue>300</NumberValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.SendIDTokenWithRefreshToken">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.EncryptIDToken">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.Name">
+                <StringValue>k8soidcclient</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.DisableConsentScreen">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.EncryptUserInfo">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.EnableWellKnownConfig">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.PopulateSMSessionInIDToken">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.ClientID">
+                <StringValue>k8ssoapui</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.Enabled">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.JWSCertificates">
+                <LinkValue>
+                    <XID>CA.FED::Certificate@000e5d8d-db3e-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+                <LinkValue>
+                    <XID>CA.FED::Certificate@000d3eb1-dc1e-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.EnablePKCESupport">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.PopulateClaimsInIDToken">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.RegenerateClientSecretFlag">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.AuthSchemeLink">
+                <LinkValue>
+                    <XID>CA.SM::AuthScheme@0d-000ed142-e1d9-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.CreatedBy">
+                <StringValue>siteminder</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.GrantTypes">
+                <StringValue>authorization_code</StringValue>
+                <StringValue>refresh_token</StringValue>
+                <StringValue>implicit</StringValue>
+                <StringValue>urn:ietf:params:oauth:grant-type:jwt-bearer</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.JWTUserLookup">
+                <StringValue>sub</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.ClientAuthentication">
+                <NumberValue>1</NumberValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.SkewTime">
+                <NumberValue>0</NumberValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.GenerateAccessTokeninJWT">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.IDTokenExpiryTime">
+                <NumberValue>300</NumberValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.RealmLink">
+                <LinkValue>
+                    <XID>CA.SM::Realm@06-000ed486-e1d9-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.CreatedOn">
+                <StringValue>1643110873968</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.EnableJWTAudienceValidation">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.ResponseLink">
+                <LinkValue>
+                    <XID>CA.SM::Response@07-000ee063-e1d9-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.JWEEnabled">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.ClientSecret" Sensitive="Yes">
+                <StringValue>sGvwrfa+ynZ6E6RwAZZU079l5HrE7GjvyEt+laOHwD0=</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.JWTRevocationCheck">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.JWTIssuers">
+                <StringValue>wso2.org/products/mss</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.RefreshTokenExpiry">
+                <NumberValue>86400</NumberValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.ResponseTypes">
+                <StringValue>Code</StringValue>
+                <StringValue>id_token token</StringValue>
+                <StringValue>id_token</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.Scopes">
+                <StringValue>openid</StringValue>
+                <StringValue>profile</StringValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.AgentLink">
+                <LinkValue>
+                    <XID>CA.SM::Agent@01-000ece96-e1d9-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.EnableClientEncryption">
+                <BooleanValue>false</BooleanValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.ApplicationType">
+                <NumberValue>1</NumberValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.AdminConfigLink">
+                <LinkValue>
+                    <XID>CA.FED::OIDCAdminConfig@000c6d3c-df51-11ef-90a7-95450a0a0000</XID>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.FED::OIDCClient.RedirectURI">
+                <StringValue>https://google.com</StringValue>
+            </Property>
+        </Object><!-- Xid="CA.FED::OIDCClient@00091501-e04f-11ef-90a7-95450a0a0000" -->
+    </PolicyData>
+</XPS>
+<!-- 14:36:43 2022-01-30 -->

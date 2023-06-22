@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2006 (www.liquid-technologies.com) for Computer Associates-->
+<!-- This is SIteMinder Agent/Host import file -->
+<XPS xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+    <XPSVersion>0</XPSVersion>
+    <PolicyData IsDumpExport="false">
+        <References>
+                  <ReferenceValue ReferenceId="Ref00009">
+                      <StringValue>mytest,44441,44442,44443</StringValue>
+                  </ReferenceValue>
+
+                  
+                  <ReferenceObject ReferenceId="Ref00002" ObjectClass="CA.SM::AgentType">
+                    <Xid>CA.SM::AgentType@10-8d78bb96-ae15-11d1-9cdd-106008aac24b</Xid>
+                    <Attribute Name="CA.SM::AgentType.Name" Type="Identity">
+                       <StringValue>Web Agent</StringValue>
+                    </Attribute>
+                    <Attribute Name="CA.SM::AgentType.Desc" Type="Comment">
+                       <StringValue>SiteMinder Web Agent</StringValue>
+                    </Attribute>
+                  </ReferenceObject> 
+
+        </References>
+
+
+
+        <Object Class="CA.SM::HostConfig" Xid="CA.SM::HostConfig@21-00020224-365a-1cd9-ac5a-3b81c0a80000" CreatedDateTime="2019-05-13T05:18:34" ModifiedDateTime="2019-05-13T05:18:34" UpdatedBy="siteminder" UpdateMethod="Internal" ExportType="Replace">
+            <Property Name="CA.SM::HostConfig.NewSocketStep">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.SM::HostConfig.EnableFailOver">
+                <BooleanValue>true</BooleanValue>
+            </Property>
+            <Property Name="CA.SM::HostConfig.RequestTimeout">
+                <NumberValue>60</NumberValue>
+            </Property>
+            <Property Name="CA.SM::HostConfig.MinSocketsPerPort">
+                <NumberValue>2</NumberValue>
+            </Property>
+            <Property Name="CA.SM::HostConfig.MaxSocketsPerPort">
+                <NumberValue>20</NumberValue>
+            </Property>
+            <Property Name="CA.SM::HostConfig.PolicyServer">
+                <LinkValue><XREF>Ref00001</XREF></LinkValue>
+            </Property>
+            <Property Name="CA.SM::HostConfig.Name">
+                <StringValue>localhost-psprobe-container</StringValue>
+            </Property>
+        </Object><!-- Xid="CA.SM::HostConfig@21-00020224-365a-1cd9-ac5a-3b81c0a80000" -->
+
+
+         
+
+    <Object Class="CA.SM::Agent" Xid="CA.SM::Agent@01-000c1cd7-b859-1cd3-ac5a-3b81c0a80000" CreatedDateTime="2019-05-09T01:19:34" ModifiedDateTime="2019-05-09T01:19:34" UpdatedBy="siteminder" UpdateMethod="Internal" ExportType="Replace">
+            <Property Name="CA.SM::Agent.RealmHintAttrId">
+                <NumberValue>0</NumberValue>
+            </Property>
+            <Property Name="CA.SM::Agent.AgentTypeLink">
+                <LinkValue>
+                    <XREF>Ref00002</XREF>
+                </LinkValue>
+            </Property>
+            <Property Name="CA.SM::Agent.Name">
+                <StringValue>psprobe-agent-container</StringValue>
+            </Property>
+        </Object><!-- Xid="CA.SM::Agent@01-000c1cd7-b859-1cd3-ac5a-3b81c0a80000" -->
+
+     </PolicyData>
+</XPS>
