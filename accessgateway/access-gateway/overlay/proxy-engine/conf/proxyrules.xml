@@ -1,16 +1,8 @@
 <?xml version="1.0"?>
 <?cocoon-process type="xslt"?>
-<!DOCTYPE nete:proxyrules SYSTEM "file://opt/CA/secure-proxy/proxy-engine/conf/dtd/proxyrules.dtd">
+<!DOCTYPE nete:proxyrules SYSTEM "file:////opt/CA/secure-proxy/proxy-engine/conf/dtd/proxyrules.dtd">
 
 <!-- Proxy Rules-->
 <nete:proxyrules xmlns:nete="http://52.140.82.167/">
-     <nete:forward>http://52.140.82.167$0</nete:forward>
-</nete:proxyrules>
-
-<nete:proxyrules xmlns:nete="http://52.140.82.168/">
-     <nete:forward>http://52.140.82.168$0</nete:forward>
-</nete:proxyrules>
-
-<nete:proxyrules xmlns:nete="http://52.140.82.169/">
-     <nete:forward>http://52.140.82.169$0</nete:forward>
+     <nete:forward>https://www.ca.com$0</nete:forward>
 </nete:proxyrules>
